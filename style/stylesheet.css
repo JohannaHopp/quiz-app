@@ -1,34 +1,37 @@
-* {
+@import "./components/global.css" {
   box-sizing: border-box;
 }
 
 body {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 150px;
-  height: 1000px;
+  height: 1300px;
   width: 400px;
-  background-color: lightblue;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: lightblue;
 }
 
 header {
   height: 80px;
   width: 400px;
   background-color: blue;
+  color: white;
   text-align: center;
   position: fixed;
-  margin-top: -8px;
+  top: 0%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   margin-top: 100px;
-  background-color: lightblue;
 }
 
 .question-card1,
@@ -38,6 +41,7 @@ main {
   height: 200px;
   width: 250px;
   margin: 5%;
+  padding: 10px;
   border: 2px solid black;
   border-radius: 15px;
   box-shadow: 3px 3px 5px blue;
@@ -52,6 +56,7 @@ main {
 button {
   height: 50px;
   width: 100px;
+  margin-top: 10px;
   border: 1px solid blue;
   border-radius: 15px;
   display: flex;
@@ -63,8 +68,9 @@ button {
 footer {
   height: 80px;
   width: 400px;
-  margin-top: 700px;
   background-color: blue;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   text-align: center;
   position: fixed;
   bottom: 0%;
@@ -75,4 +81,9 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   padding-top: 15px;
+}
+
+img {
+  height: 60px;
+  width: 60px;
 }
